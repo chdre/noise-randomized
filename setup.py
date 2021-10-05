@@ -11,7 +11,7 @@ else:
     compile_args = []
 
 setup(
-    name='noise',
+    name='noise_randomized',
     version='1.2.3',
     description='Perlin noise for Python',
     long_description='''\
