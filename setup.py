@@ -56,13 +56,13 @@ See CHANGES.txt for more details
         'Programming Language :: Python :: 3',
     ],
 
-    package_dir={'noise': ''},
-    packages=['noise'],
+    package_dir={'noise_randomized': ''},
+    packages=['noise_randomized'],
     ext_modules=[
-        Extension('noise._simplex', ['_simplex.c'], 
+        Extension('noise_randomized._simplex', ['_simplex.c'], 
             extra_compile_args=compile_args,
         ),
-        Extension('noise._perlin', ['_perlin.c'],
+        Extension('noise_randomized._perlin', ['_perlin.c'],
             extra_compile_args=compile_args,
         )
     ],
