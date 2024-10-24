@@ -291,7 +291,7 @@ static struct PyModuleDef moduledef = {
 PyObject *
 PyInit__perlin(void)
 {
-    PERM = &DEFAULTPERM;
+    PERM = DEFAULTPERM;
     return PyModule_Create(&moduledef);
 }
 

@@ -394,7 +394,7 @@ randomize(PyObject *self, PyObject *args, PyObject *kwargs)
         if(PERM==NULL)
         {    
             period=DEFAULTPERIOD;
-            PERM = &DEFAULTPERM;
+            PERM = DEFAULTPERM;
             PyErr_SetString(PyExc_ValueError, "Failed to allocate memory");
             return NULL;
         }
@@ -467,7 +467,7 @@ static struct PyModuleDef moduledef = {
 PyObject *
 PyInit__simplex(void)
 {
-    PERM = &DEFAULTPERM;
+    PERM = DEFAULTPERM;
     return PyModule_Create(&moduledef);
 }
 
